@@ -1,0 +1,27 @@
+body{
+    background: RGB(50, 48, 49);
+}
+
+.card{
+    width: 340px;
+    height: 50vh;
+    border-radius: 10px;
+    background-color: #ffff;
+}
+.text textarea{
+    width: 370px;
+    height: 50vh;
+}
+.color{
+    color: #ffff;
+}
+button{
+    background-color: red;
+    text-align: center;
+}
+/* @media only screen and (max-width: 600px) {
+   re {
+      display: flex;
+      flex-direction: column;
+    }
+  } */
