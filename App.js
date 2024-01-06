@@ -69,10 +69,10 @@ class App extends React.Component {
                 <div className='col-12 container row mx-auto'>
                 <h1 className='text-center text-light'>helloe</h1>
                 <p className='text-center text-light '>You can type in html tags as well</p>
-                <div className='col-7 m-auto'>
+                <div className=' col-sm-6 col-lg-4 m-auto'>
                 <Textarea  value={this.state.value} onChange={this.handleChange}/>
                 </div>
-                <div className='col-6 m-auto'>
+                <div className='col-sm-4 col-lg-3 mx-auto'>
                     <Card value={this.state.value}/>
                 </div>
                 </div>
