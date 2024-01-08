@@ -67,7 +67,7 @@ class App extends React.Component {
         return (
             <div >
                 <div className='col-12 container row mx-auto'>
-                <h1 className='text-center text-light'>helloe</h1>
+                <h1 className='text-center text-light'>Markdown</h1>
                 <p className='text-center text-light '>You can type in html tags as well</p>
                 <div className=' col-sm-6 col-lg-4 m-auto'>
                 <Textarea  value={this.state.value} onChange={this.handleChange}/>
