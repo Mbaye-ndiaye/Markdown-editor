@@ -6,10 +6,10 @@ class Textarea extends React.Component{
         super(props)
     }
     render() {
-        
+        const {value, onChange, rows, cols, className} = this.props 
         return(
             <div className='text'>
-                <textarea value={this.props.value} onChange={this.props.onChange}></textarea>
+                <textarea value={value} onChange={onChange} rows={rows} cols={cols} className={className}></textarea>
             </div>
         )
     }
@@ -69,10 +69,12 @@ class App extends React.Component {
                 <div className='col-12 container row mx-auto'>
                 <h1 className='text-center text-light'>Markdown</h1>
                 <p className='text-center text-light '>You can type in html tags as well</p>
-                <div className=' col-md-8 col-lg-4 m-auto'>
-                <Textarea  value={this.state.value} onChange={this.handleChange}/>
+                <div className=' col-md-6  '>
+                <Textarea
+                className="col-12 col-md-7 bg-secondary text-white rounded-0 mx-auto"
+                 rows="4" cols="50"  value={this.state.value} onChange={this.handleChange}/>
                 </div>
-                <div className='col-md-3 col-lg-3 mx-auto'>
+                <div className='col-md-3  mx-auto'>
                     <Card value={this.state.value}/>
                 </div>
                 </div>
